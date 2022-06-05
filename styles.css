@@ -20,7 +20,7 @@ body {
 .container {
 	margin: 0 auto;
 	padding: 0 30px;
-	max-width: 900px;
+	max-width: 1000px;
 }
 
 .fh {
@@ -32,7 +32,7 @@ body {
 .fv {
 	display: flex;
 	flex-direction: column;
-	justify-content: space-between;
+	justify-content: flex-start;
 }
 
 .resume {
@@ -40,7 +40,7 @@ body {
 	border: 1px solid #f5f5f5;
 	box-shadow: 1px 1px 7px 7px #f5f5f5;
 	padding: 30px 0;
-	max-width: 900px;
+	max-width: 1000px;
 }
 
 .resume__block {
@@ -65,7 +65,7 @@ body {
 	}
 
 	.experiences {
-		 margin-right: 0;
+		 margin-right: 0 !important;
 	}
 }
 
@@ -161,6 +161,10 @@ body {
 	color: var(--secondary-text-color);
 	text-align: justify;
 }
+.intro_text::first-letter{
+	color: orange;
+	font-size: 30px;
+}
 
 .skills__header {
 	color: var(--secondary-text-color);
@@ -171,6 +175,7 @@ body {
 .skills__text {
 	color: var(--secondary-text-color);
 	text-align: justify;
+	font-size: 12px;
 }
 
 /* Exp and add */
